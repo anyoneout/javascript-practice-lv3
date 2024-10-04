@@ -6,6 +6,7 @@ class Car {
     this.year = year;
   }
 
+
   getCarInfo() {
     return `${this.year} ${this.make} ${this.model}`;
   }
@@ -17,7 +18,71 @@ class Car {
 
 // Define similar classes for Phone, Book, Laptop, and Backpack...
 
+class Phone {
+  constructor(brand, model, batteryLife) {
+    this.brand = brand;
+    this.model = model;
+    this.batteryLife = batteryLife;
+  }
 
+  makeCall(number) {
+    console.log(`Calling ${number} from ${this.brand} ${this.model}.`);
+  }
+
+  batteryStatus() {
+    return `Battery life is at ${this.batteryLife}%.`;
+  
+  }
+}
+
+class Book {
+  constructor(title, author, pages) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+  }
+
+  getSummary () {
+    return `${this.title} by ${this.author}`;
+  }
+
+  readPage() {
+    console.log(`You read a page from ${this.title}.`);
+  }
+}
+
+class Laptop {
+  constructor(brand, model, ramSize) {
+    this.brand = brand;
+    this.model = model;
+    this.ramSize = ramSize;
+  }
+
+  bootUp () {
+    console.log(`The ${this.brand} ${this.model} is booting up with ${this.ramSize}GB RAM.`);
+  }
+
+  shutDown () {
+    console.log(`The ${this.brand} ${this.model} is shutting down.`);
+  }
+}
+
+class Backpack {
+  constructor(brand, color, capacity) {
+    this.brand = brand;
+    this.color = color;
+    this.capacity = capacity;
+  }
+
+  open () {
+    console.log(`Opening the ${this.color} ${this.brand} backpack.`);
+  }
+
+  checkCapacity () {
+    console.log(`This backpack has a capacity of ${this.capacity} liters.`)
+  }
+
+}
 
 // TODO: Create and test other instances for Phone, Book, Laptop, and Backpack...
 // Class: Phone
@@ -45,3 +110,7 @@ class Car {
 // checkCapacity(): Logs "This backpack has a capacity of [capacity] liters."
 
 export { Car };
+export { Phone };
+export { Book };
+export { Laptop };
+export { Backpack };

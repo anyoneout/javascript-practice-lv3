@@ -1,7 +1,7 @@
 import { describe, beforeAll, test, expect } from 'vitest';
 
 import { OpenFoodFacts } from './openfoodfacts.js';
-import sampleProduct from './data/food-nutella.json' assert {type: 'json'};
+import sampleProduct from './data/food-nutella.json' with {type: 'json'};
 
 describe('OpenFoodFacts Class Tests', () => {
   let product;

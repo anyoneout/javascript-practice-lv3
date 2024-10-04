@@ -1,7 +1,7 @@
 import {Pokemon, createPokemon} from "./pokemon.js";
 
-import charmanderData from "./data/charmander.json" assert { type: 'json' };
-import pikachuData from "./data/pikachu.json" assert { type: 'json' };
+import charmanderData from "./data/charmander.json" with { type: 'json' };
+import pikachuData from "./data/pikachu.json" with { type: 'json' };
 
 // Have a look at data/charmander.data for more details
 console.log("Hi I'm " + charmanderData.name);
