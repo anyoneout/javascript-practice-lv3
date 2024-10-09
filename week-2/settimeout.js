@@ -41,3 +41,17 @@ setTimeout(() => {
 // Problem 5: Timeout that Logs a Countdown
 // Instructions: Create a series of arrow functions inside setTimeout that count down from 3 to 1 at 1-second intervals, and finally logs "Go!" after 3 seconds.
 // Hint: You'll need to use 3 different setTimeout calls for this task.
+setTimeout(() => {
+  setTimeout(() => {
+    console.log(3);
+  }, 1000);
+  setTimeout(() => {
+    console.log(2);
+  }, 2000);
+  setTimeout(() => {
+    console.log(1);
+  }, 3000);
+  setTimeout(() => {
+    console.log("Go!");
+  }, 3000);
+}, 3000);
