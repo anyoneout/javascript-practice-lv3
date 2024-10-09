@@ -22,7 +22,7 @@ console.log(square2(5)); // Expected output: 25
 function double(x) {
   return x * 2;
 }
-let double2;
+let double2 = (x) => x * 2;
 
 // Usage
 console.log(double2(4)); // Expected output: 8
