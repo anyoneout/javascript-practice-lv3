@@ -32,7 +32,7 @@ console.log(double2(4)); // Expected output: 8
 function add(a, b) {
   return a + b;
 }
-let add2;
+let add2 = (a,b) => a+b;
 
 // Usage
 console.log(add2(3, 7)); // Expected output: 10
@@ -42,14 +42,14 @@ console.log(add2(3, 7)); // Expected output: 10
 function capitalize(str) {
   return str.toUpperCase();
 }
-let capitalize2;
+let capitalize2 = (str) => str.toUpperCase();
 
 // Problem 4: Refactor Function with No Parameters
 // Instructions: Refactor the `greet` function into an arrow function. Arrow functions without parameters require empty parentheses. Name the refactored function `greet2`.
 function greet() {
   return "Hello, world!";
 }
-let greet2;
+let greet2 = () => "Hello World";
 
 // Usage
 console.log(greet2()); // Expected output: "Hello, world!"
