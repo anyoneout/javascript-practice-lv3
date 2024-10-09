@@ -29,7 +29,10 @@ setTimeout(() => {
 }, 2000);
 // Problem 3: Timeout that Adds Two Numbers
 // Instructions: Create an arrow function that adds two numbers, 5 and 7, and logs the result (12) to the console after 3 seconds (3000 milliseconds).
-
+setTimeout(() => {
+  let numberSum = 5 + 7;
+  console.log(numberSum);
+}, 3000);
 // Problem 4: Timeout that Logs Current Time
 // Instructions: Create an arrow function that logs the current date and time using `new Date().toLocaleString()` after 4 seconds (4000 milliseconds).
 
