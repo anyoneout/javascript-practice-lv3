@@ -19,6 +19,9 @@ setTimeout(() => {
 // Problem 1: Simple Timeout with a Message
 // Instructions: Create an arrow function that logs "Hello, World!" to the console after 1 second (1000 milliseconds).
 
+setTimeout(() => {
+  console.log("Hello, World!");
+}, 1000);
 // Problem 2: Timeout that Logs a Number
 // Instructions: Create an arrow function that logs the number 42 to the console after 2 seconds (2000 milliseconds).
 
