@@ -24,7 +24,9 @@ setTimeout(() => {
 }, 1000);
 // Problem 2: Timeout that Logs a Number
 // Instructions: Create an arrow function that logs the number 42 to the console after 2 seconds (2000 milliseconds).
-
+setTimeout(() => {
+  console.log(42);
+}, 2000);
 // Problem 3: Timeout that Adds Two Numbers
 // Instructions: Create an arrow function that adds two numbers, 5 and 7, and logs the result (12) to the console after 3 seconds (3000 milliseconds).
 
