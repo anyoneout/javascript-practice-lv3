@@ -61,7 +61,10 @@ function calculateArea(length, width) {
   console.log("Area:", area);
   return area;
 }
-let calculateArea2;
+let calculateArea2 = (length,width) => {
+  const area = length * width;
+  console.log("Area", area);
+};
 
 // Usage
 console.log(calculateArea2(5, 3)); // Expected output: Area: 15, returns: 15
