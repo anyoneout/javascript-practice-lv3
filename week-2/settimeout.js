@@ -35,7 +35,9 @@ setTimeout(() => {
 }, 3000);
 // Problem 4: Timeout that Logs Current Time
 // Instructions: Create an arrow function that logs the current date and time using `new Date().toLocaleString()` after 4 seconds (4000 milliseconds).
-
+setTimeout(() => {
+  console.log(new Date().toLocaleString());
+}, 4000);
 // Problem 5: Timeout that Logs a Countdown
 // Instructions: Create a series of arrow functions inside setTimeout that count down from 3 to 1 at 1-second intervals, and finally logs "Go!" after 3 seconds.
 // Hint: You'll need to use 3 different setTimeout calls for this task.
