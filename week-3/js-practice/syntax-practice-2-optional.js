@@ -18,32 +18,34 @@
 
 // Here is a dog object:
 
-// const dog = {
-//   name: "Max",
-//   breed: "Golden Retriever",
-//   age: 5
-// };
+ const dog = {
+   name: "Max",
+   breed: "Golden Retriever",
+   age: 5
+ };
 
 // TODO: Use object destructuring to extract the name and breed and age of the dog into three variables. Log the variables.
-
+const { name, breed, age} = dog;
+console.log(`Name: ${name}, Breed: ${breed}, Age: ${age}`);
 
 // TASK 2: Object Destructuring Exercise 2
 
 // Here is a car object:
 
-// const car = {
-//   make: "Toyota",
-//   model: "Camry",
-//   year: 2020,
-//   color: "blue"
-// };
+ const car = {
+   make: "Toyota",
+   model: "Camry",
+   year: 2020,
+   color: "blue"
+};
 
 // If you don't need all the variables, you can destructure only the properties you need. For example, to extract the make and model of the car:
 
 // const { make, model } = car;
 
 // TODO: Use object destructuring to extract only the model and year of the car into two variables. Log the variables.
-
+const { model, year } = car;
+console.log(`Model: ${model}, Year: ${year}`);
 
 // Note, you will see a common short hand in React documentation where you destructure the argument object in the function parameter. For example:
 
@@ -73,14 +75,17 @@ const dog3 = {
 };
 
 // TODO: Call the dogInfo function with the dog2 and dog3 objects and log the output.
-
+console.log(dogInfo(dog2));
+console.log(dogInfo(dog3));
 
 // Now create a function that takes an object with the following properties: name, age, city. The function should return a string with the following format: "Name: [name], Age: [age], City: [city]".
 
 // TODO: complete the personInfo function
-function personInfo(  ) {
-
+function personInfo(name, age, city  ) {
+  return `name: ${name}, age: ${age}, city: ${city}`
 }
+
+console.log(personInfo("Chris", 49, "New Orleans"));
 
 // Example usage:
 const person1 = {

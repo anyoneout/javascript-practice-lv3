@@ -26,8 +26,11 @@ console.log(checkPositiveOrNegative(-5));  // Expected output: "Negative"
 
 function checkEmptyString(str) {
   // TODO: Write your solution here
-
+  return str == 0 ? "Empty String" : "Non-empty String"
 }
+console.log(checkEmptyString(""));
+console.log(checkEmptyString("Hello"));
+
 
 // Example usage
 // console.log(checkEmptyString(""));     // Expected output: "Empty String"
@@ -39,8 +42,10 @@ function checkEmptyString(str) {
 
 function checkDivisibleByFive(number) {
   // TODO: Write your solution here
-
+  return (number%5) === 0 ? "Divisible by 5" : "Not Divisible by 5"
 }
+console.log(checkDivisibleByFive(20));
+console.log(checkDivisibleByFive(27));
 
 // Example usage
 // console.log(checkDivisibleByFive(10));  // Expected output: "Divisible by 5"
@@ -59,23 +64,37 @@ console.log(`First City: ${city1}, Second City: ${city2}`);  // Expected output:
 // TODO: Destructure an array of three animals and log the second and third animals.
 
 const animals = ["Lion", "Tiger", "Elephant"];
+const [animal1, animal2, animal3] = animals;
+console.log(`Second Animal: ${animal2}, Third Animal" ${animal3}`);
 // TODO: Use array destructuring to extract three animals into three variables
 
 
+
 // Example usage
-// console.log(`First Animal: ${firstAnimal} Second Animal: ${secondAnimal}, Third Animal: ${thirdAnimal}`);  // Expected output: "Second Animal: Tiger, Third Animal: Elephant"
+console.log(`Second Animal: ${animal1}, Third Animal: ${animal2}`);  // Expected output: "Second Animal: Tiger, Third Animal: Elephant"
 
 // TASK 2: Array Destructuring Exercise 2
-// TODO: Destructure an array of four numbers and log the sum of the first two numbers.
 
 const numbers = [8, 12, 20, 30];
+// TODO: Destructure an array of four numbers and log the sum of the first two numbers.
+const [number1, number2, number3, number4] = numbers;
+const sum = number1 + number2;
+console.log(sum);
 // TODO: Use array destructuring to extract the first two numbers and calculate their sum
-// const [firstNum, secondNum] = numbers;  // Uncomment this line and complete the TODO
-// const sum = firstNum + secondNum;
+
+
+const [firstNum, secondNum] = numbers;  // Uncomment this line and complete the TODO
+const sum2 = firstNum + secondNum;
+console.log(`Sum: ${sum2}`);
 
 // Example usage
-// console.log(`Sum: ${sum}`);  // Expected output: "Sum: 20"
+ // Expected output: "Sum: 20"
 
 // Task 3: Get creative and use the ternary operator with your own example
-
+function greaterThan10(number) {
+  return number > 10 ? "Greater than 10" : "Not Greater than 10";
+}
+console.log(greaterThan10(9));
+console.log(greaterThan10(10));
+console.log(greaterThan10(11));
 // Task 4: Get creative and use array destructuring with your own example
